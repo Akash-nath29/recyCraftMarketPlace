@@ -42,7 +42,7 @@
     font-size: 15px;
 }
 
-form>input[type=search]{
+form>input[type=text]{
     width :40vw ;
 }
 form>input {

@@ -1,5 +1,6 @@
 const showResult = () =>{
-    const selection = document.querySelector('#place');
     const searchBar = document.querySelector('#location');
-    searchBar.value = selection.value;
+    const selection = document.querySelector('#place');
+    console.log(selection.options[ selection.selectedIndex ].value);
+    searchBar.value = selection.options[ selection.selectedIndex ].value;
 }

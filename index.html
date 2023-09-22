@@ -17,8 +17,8 @@
     <div class="container">
         <!-- header -->
         <div class="header">
-            <form onsubmit="showResult()">
-                <input type="search" name="location" id="location" placeholder="Search Your City">
+            <form>
+                <input type="text" name="location" id="location" placeholder="Search Your City">
                 <select name="place" id="place">
                     <option value="kalyani">Kalyani</option>
                     <option value="krishnanagar">Krishnanagar</option>
@@ -27,8 +27,29 @@
                     <option value="mumbai">Mumbai</option>
                     <option value="chennai">Chennai</option>
                 </select>
-                <input type="submit" value="Search">
+                <input type="submit" value="Search" onclick="showResult()">
             </form>
+        </div>
+
+        <!-- search result -->
+
+        <div class="searchResult">
+            <div class="leftSection col">
+                <h1>Demo Factory 1</h1>
+                <p>Factory Description: Lorem ipsum dolor sit amet, consectetur adipisicing elit. </p>
+                <label for="drop-down">Price List</label>
+                <select name="waste" id="drop-down">
+                    <option value="plastic">Plastic: 10/-</option>
+                    <option value="e-waste">E-Waste: 50/-</option>
+                    <option value="medical">Medical Waste: 30/-</option>
+                    <option value="metal">Metal: 70/-</option>
+                </select>
+            </div>
+            <div class="middleSection col">
+                <h1>Sell Waste</h1>
+                <a href="tel:1111222233"><button id="sellBtn">Contact To Sell</button></a>
+            </div>
+            <img src="img/factory1.jpeg" class="img-fluid col" alt="factory 1">
         </div>
 
         <!-- search result -->
@@ -49,7 +70,7 @@
                 <h1>Sell Waste</h1>
                 <a href="tel:1111222233"><button id="sellBtn">Contact To Sell</button></a>
             </div>
-            <img src="img/factory1.jpeg" class="img-fluid col" alt="factory 1">
+            <img src="img/factory2.jpeg" class="img img-fluid col" alt="factory 1">
         </div>
 
         <!-- search result -->
@@ -70,7 +91,7 @@
                 <h1>Sell Waste</h1>
                 <a href="tel:1111222233"><button id="sellBtn">Contact To Sell</button></a>
             </div>
-            <img src="img/factory2.jpeg" class="img img-fluid col" alt="factory 1">
+            <img src="img/factory3.jpg" class="img-fluid col" alt="factory 1">
         </div>
 
         <!-- search result -->
@@ -91,27 +112,6 @@
                 <h1>Sell Waste</h1>
                 <a href="tel:1111222233"><button id="sellBtn">Contact To Sell</button></a>
             </div>
-            <img src="img/factory3.jpg" class="img-fluid col" alt="factory 1">
-        </div>
-
-        <!-- search result -->
-
-        <div class="searchResult">
-            <div class="leftSection col">
-                <h1>Demo Factory 5</h1>
-                <p>Factory Description: Lorem ipsum dolor sit amet, consectetur adipisicing elit. </p>
-                <label for="drop-down">Price List</label>
-                <select name="waste" id="waste">
-                    <option value="plastic">Plastic: 10/-</option>
-                    <option value="e-waste">E-Waste: 50/-</option>
-                    <option value="medical">Medical Waste: 30/-</option>
-                    <option value="metal">Metal: 70/-</option>
-                </select>
-            </div>
-            <div class="middleSection col">
-                <h1>Sell Waste</h1>
-                <a href="tel:1111222233"><button id="sellBtn">Contact To Sell</button></a>
-            </div>
             <img src="img/factory4.jpg" class="img-fluid col" alt="factory 1">
         </div>
 
@@ -119,7 +119,7 @@
 
         <div class="searchResult">
             <div class="leftSection col">
-                <h1>Demo Factory 6</h1>
+                <h1>Demo Factory 5</h1>
                 <p>Factory Description: Lorem ipsum dolor sit amet, consectetur adipisicing elit. </p>
                 <label for="drop-down">Price List</label>
                 <select name="waste" id="waste">
