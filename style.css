@@ -23,6 +23,10 @@
     position: sticky;
     top: 0;
 }
+.navbar button {
+    border: none;
+    outline: none;
+}
 .header {
     display: flex;
     align-items: center;
