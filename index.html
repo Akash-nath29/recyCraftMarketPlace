@@ -11,40 +11,34 @@
 </head>
 
 <body>
-    <nav class="navbar px-5 py-3" id="navbar">
+    <nav class="navbar sticky-top px-5 py-3" id="navbar">
         <h1>RecyCraft</h1>
-        <a href="#"><button id="contribute">Become a Vender</button></a>
+        <a href="#"><button id="contribute" class="btn btn-light">Become a Vender</button></a>
     </nav>
     <div class="container">
         <!-- header -->
         <div class="header">
-            <form>
+            <div id="form">
                 <input type="text" name="location" id="location" placeholder="Search Your City">
                 <select name="place" id="place">
-                    <option value="kalyani">Kalyani</option>
-                    <option value="krishnanagar">Krishnanagar</option>
-                    <option value="kolkata">Kolkata</option>
-                    <option value="shiliguri">Shiliguri</option>
-                    <option value="mumbai">Mumbai</option>
-                    <option value="chennai">Chennai</option>
+                    <option value="">--Select City--</option>
+                    <option value="Kalyani">Kalyani</option>
+                    <option value="Krishnanagar">Krishnanagar</option>
+                    <option value="Kolkata">Kolkata</option>
+                    <option value="Shiliguri">Shiliguri</option>
+                    <option value="Mumbai">Mumbai</option>
+                    <option value="Chennai">Chennai</option>
                 </select>
                 <input type="submit" value="Search" onclick="showResult()">
-            </form>
+            </div>
         </div>
 
         <!-- search result -->
 
         <div class="searchResult">
             <div class="leftSection col">
-                <h1>Demo Factory 1</h1>
-                <p>Factory Description: Lorem ipsum dolor sit amet, consectetur adipisicing elit. </p>
-                <label for="drop-down">Price List</label>
-                <select name="waste" id="drop-down">
-                    <option value="plastic">Plastic: 10/-</option>
-                    <option value="e-waste">E-Waste: 50/-</option>
-                    <option value="medical">Medical Waste: 30/-</option>
-                    <option value="metal">Metal: 70/-</option>
-                </select>
+                <h1>Deepak Malhotra</h1>
+                <p>Contact: +91 6598326478<br>Address: Some Street, Moon<br>With 6 years of experience of recycling wastes</p>
             </div>
             <div class="middleSection col">
                 <h1>Sell Waste</h1>
@@ -57,15 +51,8 @@
 
         <div class="searchResult">
             <div class="leftSection col">
-                <h1>Demo Factory 2</h1>
-                <p>Factory Description: Lorem ipsum dolor sit amet, consectetur adipisicing elit. </p>
-                <label for="drop-down">Price List</label>
-                <select name="waste" id="waste">
-                    <option value="plastic">Plastic: 10/-</option>
-                    <option value="e-waste">E-Waste: 50/-</option>
-                    <option value="medical">Medical Waste: 30/-</option>
-                    <option value="metal">Metal: 70/-</option>
-                </select>
+                <h1>Rajiv Deshmukh</h1>
+                <p>Contact: +91 1565798423<br>Address: Some Street, Jupitar<br>With 8 years of experience of recycling wastes</p>
             </div>
             <div class="middleSection col">
                 <h1>Sell Waste</h1>
@@ -78,15 +65,8 @@
 
         <div class="searchResult">
             <div class="leftSection col">
-                <h1>Demo Factory 3</h1>
-                <p>Factory Description: Lorem ipsum dolor sit amet, consectetur adipisicing elit. </p>
-                <label for="drop-down">Price List</label>
-                <select name="waste" id="waste">
-                    <option value="plastic">Plastic: 10/-</option>
-                    <option value="e-waste">E-Waste: 50/-</option>
-                    <option value="medical">Medical Waste: 30/-</option>
-                    <option value="metal">Metal: 70/-</option>
-                </select>
+                <h1>Alok Tiwari</h1>
+                <p>Contact: +91 2356498715<br>Address: Some Street, Uranus<br>With 2 years of experience of recycling wastes</p>
             </div>
             <div class="middleSection col">
                 <h1>Sell Waste</h1>
@@ -99,15 +79,8 @@
 
         <div class="searchResult">
             <div class="leftSection col">
-                <h1>Demo Factory 4</h1>
-                <p>Factory Description: Lorem ipsum dolor sit amet, consectetur adipisicing elit. </p>
-                <label for="drop-down">Price List</label>
-                <select name="waste" id="waste">
-                    <option value="plastic">Plastic: 10/-</option>
-                    <option value="e-waste">E-Waste: 50/-</option>
-                    <option value="medical">Medical Waste: 30/-</option>
-                    <option value="metal">Metal: 70/-</option>
-                </select>
+                <h1>Sunil Kumar</h1>
+                <p>Contact: +91 9784563215<br>Address: Some Street, Pluto<br>With 5 years of experience of recycling wastes</p>
             </div>
             <div class="middleSection col">
                 <h1>Sell Waste</h1>
@@ -120,15 +93,8 @@
 
         <div class="searchResult">
             <div class="leftSection col">
-                <h1>Demo Factory 5</h1>
-                <p>Factory Description: Lorem ipsum dolor sit amet, consectetur adipisicing elit. </p>
-                <label for="drop-down">Price List</label>
-                <select name="waste" id="waste">
-                    <option value="plastic">Plastic: 10/-</option>
-                    <option value="e-waste">E-Waste: 50/-</option>
-                    <option value="medical">Medical Waste: 30/-</option>
-                    <option value="metal">Metal: 70/-</option>
-                </select>
+                <h1>Karan Rajan</h1>
+                <p>Contact: +91 5649871235<br>Address: Some Street, Sun<br>With 15 years of experience of recycling wastes</p>
             </div>
             <div class="middleSection col">
                 <h1>Sell Waste</h1>
@@ -137,8 +103,23 @@
             <img src="img/factory5.jpeg" class="img-fluid col" alt="factory 1">
         </div>
 
+        <!-- search result -->
+
+        <div class="searchResult">
+            <div class="leftSection col">
+                <h1>Rakesh Sharma</h1>
+                <p>Contact: +91 3469782654<br>Address: Some Street, Saturn<br>With 4 years of experience of recycling wastes</p>
+            </div>
+            <div class="middleSection col">
+                <h1>Sell Waste</h1>
+                <a href="tel:1111222233"><button id="sellBtn">Contact To Sell</button></a>
+            </div>
+            <img src="img/factory6.jpg" class="img-fluid col" alt="factory 1">
+        </div>
+
     </div>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
+    <script src="script.js"></script>
   </body>
 </body>
 

@@ -10,6 +10,7 @@
     align-items: center;
     justify-content: center;
     padding-bottom: 5vh;
+    margin-bottom: 5vh;
 }
 .navbar {
     background-color:#061837;
@@ -19,7 +20,7 @@
     align-items: center;
     justify-content: space-between;
     margin-bottom: 2vh;
-    z-index: 100;
+    z-index: 1;
     position: sticky;
     top: 0;
 }
@@ -36,27 +37,24 @@
 #contribute {
     padding: 8px 20px;
     cursor: pointer;
-}
-#contribute {
     text-decoration: none;
     font-size: 15px;
 }
-
-form>input[type=text]{
+#form>input[type=text]{
     width :40vw ;
 }
-form>input {
+#form>input {
     padding: 8px 20px;
     border: 1px solid black;
     outline: none;
     cursor: pointer;
 }
-form>input[type=submit]{
+#form>input[type=submit]{
     background-color: #061837;
     color: white;
     transition: 0.4s;
 }
-form>input[type=submit]:hover {
+#form>input[type=submit]:hover {
     background-color: white;
     border: 1px solid #061837;
     color: #061837;
@@ -84,7 +82,7 @@ select {
     margin: 2vh 0;
 }
 .searchResult p {
-    width: 50%;
+    width: 80%;
     margin: 2vh 0;
 }
 #sellBtn {
@@ -104,4 +102,44 @@ select {
 }
 img {
     width: 250px;
+}
+
+@media screen and (max-width: 700px) {
+    /* * {
+        font-size: 15px;
+    } */
+    .navbar {
+        padding: 2vh 2vh;
+    }
+    .searchResult {
+        display: flex;
+        flex-direction: column;
+        align-items: space-between;
+        justify-content:center;
+        padding: 2vh;
+    }
+    .leftSection {
+        width: 100%;
+    }
+    .searchResult p {
+        width: 100%;
+    }
+    #form>input[type=text] {
+        width: 100%;
+        padding: 1vh;
+        margin: 1vh 0;
+    }
+    select {
+        width: 50%;
+    }
+    #form>input[type=submit]{
+        width: 45%;
+    }
+    .searchResult {
+        padding: 2vh;
+        width: 95%;
+    }
+    img {
+        margin: 2vh;
+    }
 }
