@@ -1,9 +1,9 @@
 function showResult() {
-    const searchBar = document.querySelector('#location');
+    // const searchBar = document.querySelector('#location');
     const selection = document.querySelector('#place');
     const container = document.querySelector('.search')
     // console.log(selection.options[ selection.selectedIndex ].value);
-    searchBar.value = selection.options[selection.selectedIndex].value;
+    // searchBar.value = selection.options[selection.selectedIndex].value;
     if (selection.options[selection.selectedIndex].value == "Kalyani") {
         container.innerHTML = '<!-- search result --><div class="searchResult" ><div class="leftSection col"><h1>Deepak Malhotra</h1><p>Contact: +91 6598326478<br>Address: Some Street, Moon<br>With 6 years of experience of recycling wastes</p></div><div class="middleSection col"><h1>Sell Waste</h1><a href="tel:6598326478"><button id="sellBtn">Contact To Sell</button></a></div><img src="img/worker1.jpg" class="img-fluid col" alt="factory 1"></div><!-- search result --><div class="searchResult"><div class="leftSection col"><h1>Rajiv Deshmukh</h1><p>Contact: +91 1565798423<br>Address: Some Street, Jupitar<br>With 8 years of experience of recycling wastes</p></div><div class="middleSection col"> <h1>Sell Waste</h1><a href="tel:1565798423"><button id="sellBtn">Contact To Sell</button></a></div><img src="img/worker2.jpg" class="img img-fluid col" alt="factory 1"></div>';
     }
